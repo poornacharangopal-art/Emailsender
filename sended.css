@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* 🌄 Attractive background image */
+    background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Dark overlay feel */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    margin: 15px 0;
+    word-break: break-word;
+}
+
+p {
+    color: #555;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+.secondary {
+    background: #2ecc71;
+    margin-left: 10px;
+}
+
+.secondary:hover {
+    background: #1eae5f;
+}

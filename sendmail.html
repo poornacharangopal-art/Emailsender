@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Send Mail</title>
+
+    <link rel="stylesheet" href="/sendmail.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">Mail Sender</div>
+
+        <ul class="nav-links">
+
+            <li><a href="/welcome.html">Home</a></li>
+
+            <li><a href="/dashboard">Dashboard</a></li>
+
+            <li><a href="/logout">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Send Email</h1>
+
+            <p>Send emails instantly using Gmail SMTP</p>
+
+
+            <form action="/sendmail" method="POST">
+
+                <input type="email" name="to" placeholder="Recipient Email" required>
+
+                <input type="text" name="subject" placeholder="Subject" required>
+
+                <textarea name="message" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Mail</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

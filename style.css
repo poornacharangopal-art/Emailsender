@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;background-image:
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop");
+
+    background-attachment:fixed;
+
+    overflow-x:hidden;
+}
+
+
+/* Dark overlay */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+    z-index:-1;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+    width:100%;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.logo{
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+.nav-links li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    transition:0.3s;
+
+}
+
+
+.nav-links li a:hover{
+
+    background:rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+
+    height:85vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/* GLASS CARD */
+
+.card{
+
+    width:700px;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,0.35);
+
+}
+
+
+.card h1{
+
+    color:white;
+
+    font-size:58px;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+
+.card p{
+
+    color:#f1f5f9;
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+}
+
+
+.card button{
+
+    border:none;
+
+    padding:18px 45px;
+
+    font-size:20px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.card button:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 15px 30px rgba(255,255,255,0.25);
+
+}
