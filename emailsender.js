@@ -9,7 +9,7 @@ const server=http.createServer((req,res)=>{
     if(req.method=="GET"&&req.url=="/"){
         const session=sessions[cookies.sessionId];
         if(session){
-            fs.readFile("welcome.html","utf8",(err,data)=>{
+            fs.readFile("index.html","utf8",(err,data)=>{
                 if(err){
                     return console.log("error");
                 }
@@ -272,7 +272,7 @@ if(req.url==="/sendmail.css"){
 }
 if(req.url==="/welcome.html"){
 
-    fs.readFile("welcome.html",(err,data)=>{
+    fs.readFile("index.html",(err,data)=>{
 
         if(err){
 
