@@ -1,0 +1,14 @@
+{
+  "name": "emailsender",
+  "version": "1.0.0",
+  "description": "Email Sender using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "nodemailer": "^7.0.5",
+    "uuid": "^11.1.0"
+  }
+}
